@@ -135,6 +135,7 @@ h3 {
     padding: 30px;
     margin: 10px 0;
     border-radius: 10px;
+    pointer-events: none;
     & h3, i, b {
         font-family: 'Times New Roman', Times, serif;
     }
