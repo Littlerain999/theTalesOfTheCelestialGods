@@ -16,9 +16,9 @@ body {
     color: #eee;
     background-color: black;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
-    align-items: top;
+    align-items: center;
     padding: 0 20px;
     padding-top: 50px;
 }
@@ -43,35 +43,6 @@ header {
             color: #eee;
         }
     }
-    /* & .navigation {
-        display: flex;
-        justify-content: center;
-        list-style: none;
-        gap: 10px;
-        & a {
-            color: #eee;
-            text-decoration: none;
-            font-weight: 600;
-            position: relative;
-            &::after {
-                content: '';
-                position: absolute;
-                height: 2px;
-                width: 100%;
-                background-color: #eee;
-                border-radius: 10px;
-                left: 0;
-                bottom: -2px;
-                scale: 0;
-                transition: .25s;
-            }
-            &:hover {
-                &::after {
-                    scale: 1;
-                }
-            }
-        }
-    } */
     & .login-BtnPopup {
         padding: 8px 35px;
         font-weight: 600;
@@ -90,6 +61,7 @@ header {
 
 main {
     width: 100%;
+    max-width: 800px;
 }
 
 h3 {
@@ -128,19 +100,15 @@ h3 {
 }
 
 .contents {
-    text-align: center;
+    /* text-align: center; */
     background-color: #ccc;
     color: black;
     font-family: 'Times New Roman', Times, serif;
     padding: 30px;
     margin: 10px 0;
     border-radius: 10px;
-    pointer-events: none;
-    user-select: none;
     & h3, i, b {
         font-family: 'Times New Roman', Times, serif;
-        pointer-events: none;
-        user-select: none;
     }
     & h3 {
         font-size: 30px;
